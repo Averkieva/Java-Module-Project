@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class inputValidation {
+public class InputValidation {
     public static int askCount(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("На сколько человек нужно разделить счет?");
         int countOfPeople;
-        while(1==1){//бесконечный цикл для того, чтобы программа попросила ввести снова количество людей
+        while(true){//бесконечный цикл для того, чтобы программа попросила ввести снова количество людей
             if(scanner.hasNextInt()==false){//проверка на целое
                 System.out.println("Ожидалось число. Try again!");
                 scanner.next();

@@ -4,11 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Добро пожаловать в калькулятор!");
-        int count = inputValidation.askCount();
+        int count = InputValidation.askCount();
         System.out.println("Количество людей: " + count + "штук");
         double sum = Calculator.calcul();
-        System.out.println(String.format("Сумма = " + "%.2f", sum)+ " " + correctWriting.WritingRub((int)Math.floor(sum)));
-        System.out.println(String.format("Сумма на одну персону = " + "%.2f", (sum/count))+ " " +correctWriting.WritingRub((int)Math.floor(sum/count)));
+        System.out.println(String.format("Сумма = " + "%.2f", sum)+ " " + CorrectWriting.writingRub((int)Math.floor(sum)));
+        System.out.println(String.format("Сумма на одну персону = " + "%.2f", (sum/count))+ " " +CorrectWriting.writingRub((int)Math.floor(sum/count)));
     }
 
 }

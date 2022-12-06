@@ -8,9 +8,9 @@ public class Calculator {
         double costOfProduct = checkPrice();
         double sum = 0.0;
         sum += costOfProduct;
-        String outMess = String.format("\nДобавленные товары: \n" + nameOfProduct + "    %.2f", costOfProduct)+ " " + correctWriting.WritingRub((int)Math.floor(costOfProduct));
+        String outMess = String.format("\nДобавленные товары: \n" + nameOfProduct + "    %.2f", costOfProduct)+ " " + CorrectWriting.writingRub((int)Math.floor(costOfProduct));
         System.out.println("Все добавлено. Введите Завершить для окончания сессии либо любой другой символ для продолжения");
-        while(1==1){
+        while(true){
             if (scanner.next().equalsIgnoreCase("Завершить")) {//игнор регистра
                 System.out.println(outMess);
                 break;
@@ -21,7 +21,7 @@ public class Calculator {
                 nameOfProduct = scanner.nextLine();
                 costOfProduct = checkPrice();
                 sum += costOfProduct;
-                outMess = String.format("\nДобавленные товары: \n" + nameOfProduct + "    %.2f", costOfProduct) + " " + correctWriting.WritingRub((int)Math.floor(costOfProduct));
+                outMess = String.format("\nДобавленные товары: \n" + nameOfProduct + "    %.2f", costOfProduct) + " " + CorrectWriting.writingRub((int)Math.floor(costOfProduct));
                 System.out.println("Все добавлено. Введите Завершить для окончания сессии либо любой другой символ для продолжения");
             }
 
